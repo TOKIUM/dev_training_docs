@@ -1,8 +1,9 @@
 ---
 marp: true
 theme: tokium
-class: title
 ---
+
+<!-- _class: title -->
 
 # スクラム開発研修
 
