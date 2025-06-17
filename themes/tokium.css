@@ -14,6 +14,7 @@
   --tokium-text: #222229;         /* Text Black */
   --tokium-white: #FFFFFF;        /* White */
   --tokium-gray: #F6F6F6;         /* Background Gray */
+  --tokium-dark-gray: #B2B7B8;    /* Dark Gray */
   --tokium-pale-blue: #EDF7F8;    /* Pale Blue */
   --tokium-extend-blue: #45B3BA;  /* Extend Blue */
   --tokium-extend-teal: #70CDC7;  /* Extend Teal */
@@ -36,7 +37,6 @@ section {
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  height: calc(100vh - 120px);
   overflow: hidden;
 }
 
@@ -50,8 +50,6 @@ section.title {
   background-color: var(--tokium-white);
   background-image: none;
   padding: 150px 80px 80px 80px;
-  height: 100vh;
-  overflow: hidden;
 }
 
 section.title h1 {
@@ -64,6 +62,12 @@ section.title h1 {
   background: none;
   padding: 0;
   border-radius: 0;
+  position: static;
+  width: auto;
+}
+
+section.title h1::after {
+  display: none;
 }
 
 section.title h2 {
@@ -87,12 +91,23 @@ h1 {
   font-size: 2em;
   font-weight: 700;
   margin: 0 0 0.8em 0;
-  border: none;
-  padding: 0;
+  padding-bottom: 0.3em;
   line-height: 1.1;
   text-align: left;
   background: none;
   border-radius: 0;
+  position: relative;
+  width: 100%;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--tokium-dark-gray);
 }
 
 h2 {
