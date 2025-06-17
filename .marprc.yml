@@ -1,6 +1,7 @@
 allowLocalFiles: true
 html: true
-theme: default
+theme: tokium
+themeSet: themes
 options:
   looseYAML: false
   markdown:
