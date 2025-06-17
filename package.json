@@ -1,0 +1,19 @@
+{
+  "name": "dev-training-docs",
+  "version": "1.0.0",
+  "description": "Development training documentation using Marp",
+  "main": "index.js",
+  "scripts": {
+    "build": "marp --input-dir slides --output slides/dist --html",
+    "build:pdf": "marp --input-dir slides --output slides/dist --pdf",
+    "build:pptx": "marp --input-dir slides --output slides/dist --pptx",
+    "preview": "marp --input-dir slides --server --watch",
+    "clean": "rm -rf slides/dist"
+  },
+  "keywords": ["marp", "slides", "documentation", "training"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  }
+}
