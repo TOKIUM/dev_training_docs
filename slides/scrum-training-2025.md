@@ -64,16 +64,28 @@ theme: tokium
 
 ## 最高のプロダクトを作るぞ！
 
-```
-AIにレシピ決めて         作るの飽きる！
-   ほしい！           ゲーム要素いれて！
-
-        ユーザーからの要望がたくさん！！
-
-ヴィーガンレシピ         冷蔵庫の中身も
- だけ見せて！            管理して！
-           BearCook
-```
+<div class="bearcook-diagram">
+  <div class="request top-left">
+    <div class="speech-bubble">AIにレシピ決めて<br>ほしい！</div>
+  </div>
+  <div class="request top-right">
+    <div class="speech-bubble">作るの飽きる！<br>ゲーム要素いれて！</div>
+  </div>
+  <div class="smartphone-container">
+    <img src="./images/smartphone_hand.png" alt="スマートフォン" class="smartphone-image">
+    <div class="screen-content">
+      <img src="./images/animal_chef_kuma.png" alt="BearCook" class="bear-chef">
+      <div class="app-name">BearCook</div>
+    </div>
+  </div>
+  <div class="request bottom-left">
+    <div class="speech-bubble">ヴィーガンレシピ<br>だけ見せて！</div>
+  </div>
+  <div class="request bottom-right">
+    <div class="speech-bubble">冷蔵庫の中身も<br>管理して！</div>
+  </div>
+  <div class="center-text">ユーザーからの要望がたくさん！！</div>
+</div>
 
 ---
 
